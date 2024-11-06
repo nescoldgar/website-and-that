@@ -1,0 +1,64 @@
+/* Columns */
+.left,
+.right {
+    float: left;
+    width: 25%;
+    background-color: lightgray;
+    color: white;
+    min-height: 300px;
+    /* Ensures there is always some height */
+    padding: 20px;
+    /* Adds padding to prevent text from touching the edges */
+    box-sizing: border-box;
+}
+
+.middle {
+    float: left;
+    width: 50%;
+    background-color: grey;
+    color: white;
+    text-indent: 2%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Text alignment */
+
+.text-left {
+    text-align: left;
+    float: left;
+}
+
+.text-right {
+    text-align: right;
+    float: left;
+}
+
+.text-center {
+    text-align: center;
+    float: left;
+}
+
+.center {
+    float: left;
+    margin-right: auto;
+    margin-left: 50%;
+}
+
+/* Other */
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    .left, .middle, .right {
+        width: 100%; /* Stack columns vertically on smaller screens */
+        float: none;
+    }
+}
